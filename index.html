@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shukurullo olim</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <div id="postionReltive">
+            <img src="Images/langDarkMode-svg.svg" alt="lang" id="homeIcon" onclick="switchLang();">
+            <a href="index.html">
+                <img src="Images/refresh_FILL0_wght400_GRAD0_opsz48-svg.svg" alt="Back to home" id="backToHomeButton" onclick="reset();">
+            </a>
+            <img src="Images/darkModeDarkMode-svg.svg" alt="darkMode" id="darkModeIcon" onclick="
+            if (darkOrLightMode == 'lightMode') {
+                darkOrLightMode = 'darkMode';
+                localStorage.setItem('whichMode', darkOrLightMode);
+                document.body.style.backgroundColor = '#1e1e1e';
+                document.body.style.color = 'white';
+            } else if (darkOrLightMode == 'darkMode') {
+                darkOrLightMode = 'lightMode';
+                localStorage.setItem('whichMode', darkOrLightMode);
+                document.body.style.backgroundColor = 'white';
+                document.body.style.color = 'black';   
+            };">
+        </div>
+    </header>
+    <div id="flex">
+        <!-- <div id="box1" style="--order: 1;">
+            
+        </div>
+        <div id="box2" style="--order: 2;">
+            
+        </div>
+        <div id="box3" style="--order: 3">
+            
+        </div> -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

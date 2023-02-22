@@ -1,0 +1,109 @@
+:root {
+    --order: 1;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+}
+
+#postionReltive {
+    position: relative;
+    width: 100%;
+    height: 70px
+}
+
+#homeIcon, #backToHomeButton, #darkModeIcon, #langIcon {
+    position: absolute;
+}
+
+#homeIcon {
+    top: 8px;
+    left: 50px;
+    cursor: pointer;
+}
+
+#backToHomeButton {
+    height: 48px;
+    width: 48px;
+    left: 120px;
+    top: 10px;
+    cursor: pointer;
+}
+
+#darkModeIcon {
+    height: 36px;
+    width: 36px;
+    top: 14px;
+    left: 205px;
+    cursor: pointer;
+}
+
+#flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#textAnimation, #textAnimation2, #textAnimation3, #textAnimation4, #textAnimation5 {
+    text-align: center;
+    font-family: consolas;
+}
+
+#drop1, #box1, #box2, #box3, .drop1 {
+    animation: forwards 1s ease forwards;
+    animation-delay: calc(var(--order) * 100ms);
+}
+
+@keyframes forwards {
+    from { transform: translateY(500px);}
+    to { transform: translateY(0);}
+}
+
+#selectionButtons {
+    display: inline-block;
+    margin-right: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    height: 280px;
+    width: 340px;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    transition: color 0.2s ease-in,
+        opacity 0.2s ease-in-out,
+            text-decoration 0.2s;
+    position: relative;
+}
+
+#selectionButtons:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+    color: green;
+}
+
+#selectionButtons:active {
+    opacity: 0.5;
+}
+
+.sqrtImage{
+    display: block;
+    position: absolute;
+    top: 0;
+}
+
+.cbrtImage {
+    display: block;
+    position: absolute;
+    top: 37px;
+}
+
+.Card-body {
+    display: block;
+    cursor: pointer;
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 100px;
+}
