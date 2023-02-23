@@ -27,6 +27,7 @@ const startAnimation = (name, text) => {
 
 const reset = () => {
     localStorage.removeItem('firstTime');
+    document.location.reload();
 };
 
 const switchLang = () => {
