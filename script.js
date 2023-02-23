@@ -15,6 +15,7 @@ if (darkOrLightMode == 'darkMode') {
 };
 
 let i = 0;
+let windowWidth = window.innerWidth
 
 const startAnimation = (name, text) => {
     for (let index = 0; index < text.length; index++) {
@@ -81,6 +82,18 @@ if (lang == 'uk') {
     element.innerHTML = `<h1 id='textAnimation'></h1><h1 id='textAnimation2'></h1><h1 id='textAnimation3'></h1><h1 id='textAnimation4'></h1><h1 id='textAnimation5'></h1>`
     document.body.append(element);
     element.setAttribute('id', 'drop1');
+    if (windowWidth <= 780) {
+        let N1 = document.getElementById('textAnimation');
+        let N2 = document.getElementById('textAnimation2');
+        let N3 = document.getElementById('textAnimation3');
+        let N4 = document.getElementById('textAnimation4');
+        let N5 = document.getElementById('textAnimation5');
+        N1.style.fontFamily = 'consolasMobile';
+        N2.style.fontFamily = 'consolasMobile';
+        N3.style.fontFamily = 'consolasMobile';
+        N4.style.fontFamily = 'consolasMobile';
+        N5.style.fontFamily = 'consolasMobile';
+    };
 
     if (firstTime == 'false') {
         let margin = document.getElementById('textAnimation5');
@@ -110,6 +123,18 @@ if (lang == 'uk') {
     element.innerHTML = `<h1 id='textAnimation'></h1><h1 id='textAnimation2'></h1><h1 id='textAnimation3'></h1><h1 id='textAnimation4'></h1><h1 id='textAnimation5'></h1>`
     document.body.append(element);
     element.setAttribute('id', 'drop1');
+    if (windowWidth <= 780) {
+        let N1 = document.getElementById('textAnimation');
+        let N2 = document.getElementById('textAnimation2');
+        let N3 = document.getElementById('textAnimation3');
+        let N4 = document.getElementById('textAnimation4');
+        let N5 = document.getElementById('textAnimation5');
+        N1.style.fontFamily = 'consolasMobile';
+        N2.style.fontFamily = 'consolasMobile';
+        N3.style.fontFamily = 'consolasMobile';
+        N4.style.fontFamily = 'consolasMobile';
+        N5.style.fontFamily = 'consolasMobile';
+    };
     if (firstTime == 'false') {
         let margin = document.getElementById('textAnimation5');
         margin.style.margin = 'auto, auto, 30px, auto';

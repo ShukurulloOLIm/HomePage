@@ -2,6 +2,10 @@
     --order: 1;
 }
 
+body {
+    font-family: Roboto;
+}
+
 #header {
     position: absolute;
     top: 0;
@@ -53,10 +57,11 @@
     align-items: center;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 780px) {
     .flex {
         flex-direction: column;
         justify-content: center;
+        transition: flex-direction 0.15s;
     }
     #homeIcon {
         left: 7px;
@@ -70,11 +75,21 @@
         left: 10px;
         top: 125px;
     }
+    #textAnimation, #textAnimation2, #textAnimation3, #textAnimation4, #textAnimation5 {
+        font-family: consolasMobile;
+    }
+    body {
+        font-weight: 400;
+    }
 }
 
 #textAnimation, #textAnimation2, #textAnimation3, #textAnimation4, #textAnimation5 {
     text-align: center;
     font-family: consolas;
+}
+
+#textANimation {
+    margin: 30px, auto, auto, auto;
 }
 
 #drop1, #box1, #box2, #box3, .drop1 {
@@ -135,4 +150,9 @@
 @font-face {
     font-family: 'consolas';
     src: url(fonts/CONSOLA.TTF);
+}
+
+@font-face {
+    font-family: 'consolasMobile';
+    src: url(fonts/CascadiaCodePL-Light.ttf);
 }
