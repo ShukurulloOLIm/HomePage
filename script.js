@@ -43,7 +43,7 @@ const switchLang = () => {
 
 const games = () => {
     let games = document.createElement('div');
-    games.setAttribute('id', 'flex');
+    games.setAttribute('class', 'flex');
     if (lang == 'uk') {
         games.innerHTML = `<a href='https://shukurulloolim.github.io/sqrt/'><button id='selectionButtons' style='--order: 1' class='drop1'><div class='main-box'><img src='Images/sqrt.png' alt='sqrt' class='sqrtImage'><div class='Card-body'><h3 class='Title'>F Sqrt</h3><div class='smallerbox'></div></div></div></button></a><a href='https://shukurulloolim.github.io/hi/'><button id='selectionButtons' style='--order: 2' class='drop1'> <div class='main-box'> <img src='Images/math.png' alt='sqrt' class='cbrtImage'> <div class='Card-body'><h3 class='Title'>Mental Math Game</h3><div class='smallerbox'></div></div></div></button></a>`;    
     } else if (lang == 'jp') {
@@ -82,6 +82,8 @@ if (lang == 'uk') {
     element.setAttribute('id', 'drop1');
 
     if (firstTime == 'false') {
+        let margin = document.getElementById('textAnimation5');
+        margin.style.margin = 'auto, auto, 30px, auto';
         setTimeout(() => startAnimation('textAnimation', txt1), 600);
         setTimeout(() => startAnimation('textAnimation2', txt2), 1600);
         setTimeout(() => startAnimation('textAnimation3', txt3), 3600);
@@ -90,7 +92,9 @@ if (lang == 'uk') {
         setTimeout(() => games(), 12000);
         localStorage.setItem('firstTime', 'true')
     } else if (firstTime == 'true') {
-        txt2 = 'Welcome Back!'
+        txt2 = 'Welcome Back!';
+        let margin = document.getElementById('textAnimation2');
+        margin.style.margin = 'auto, auto, 30px, auto';
         setTimeout(() => startAnimation('textAnimation', txt1), 600);
         setTimeout(() => startAnimation('textAnimation2', txt2), 1600);
         setTimeout(() => games(), 2000);
@@ -105,8 +109,9 @@ if (lang == 'uk') {
     element.innerHTML = `<h1 id='textAnimation'></h1><h1 id='textAnimation2'></h1><h1 id='textAnimation3'></h1><h1 id='textAnimation4'></h1><h1 id='textAnimation5'></h1>`
     document.body.append(element);
     element.setAttribute('id', 'drop1');
-
     if (firstTime == 'false') {
+        let margin = document.getElementById('textAnimation5');
+        margin.style.margin = 'auto, auto, 30px, auto';
         setTimeout(() => startAnimation('textAnimation', txt1), 600);
         setTimeout(() => startAnimation('textAnimation2', txt2), 1600);
         setTimeout(() => startAnimation('textAnimation3', txt3), 3600);
@@ -116,11 +121,13 @@ if (lang == 'uk') {
         localStorage.setItem('firstTime', 'true')
     } else if (firstTime == 'true') {
         txt2 = 'おかえり！'
+        let margin = document.getElementById('textAnimation2');
+        margin.style.margin = 'auto, auto, 30px, auto';
         setTimeout(() => startAnimation('textAnimation', txt1), 600);
         setTimeout(() => startAnimation('textAnimation2', txt2), 1600);
         setTimeout(() => games(), 2000);
     };
-}
+};
 
 
 
