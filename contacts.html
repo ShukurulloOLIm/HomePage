@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shukurullo olim</title>
+    <title>Shukurullo olim Contacts</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,9 @@
     <header id="header">
         <div id="postionReltive">
             <img src="Images/langDarkMode-svg.svg" alt="lang" id="homeIcon" onclick="switchLang();">
-            <img src="Images/refresh.svg" alt="Back to home" id="backToHomeButton" onclick="reset();">
+            <a href="index.html">
+                <img src="Images/undo.svg" alt="Undo icon" id="undoIcon">
+            </a>
             <img src="Images/darkModeDarkMode-svg.svg" alt="darkMode" id="darkModeIcon" onclick="
             if (darkOrLightMode == 'lightMode') {
                 darkOrLightMode = 'darkMode';
@@ -32,15 +34,9 @@
                 document.body.style.backgroundColor = 'white';
                 document.body.style.color = 'black';   
             };">
-            <a href="updates.html">
-                <img src="Images/updates.svg" alt="Updates" id="updateIcons">
-            </a>
-            <a href="contacts.html">
-                <img src="Images/About.svg" alt="About" id="aboutIcons">
-            </a>
         </div>
     </header>
-    <script src="JS/script.js"></script>
+    <script src="JS/script2.js"></script>
 </body>
 
 </html>
